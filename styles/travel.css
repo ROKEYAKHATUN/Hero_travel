@@ -15,15 +15,27 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-
+/*nav section style*/
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.left img{
+    max-width:50px;
+    max-height: 60px;
+    width: 100%;
+    height: 100%;
+}
 
-nav > ul {
+.right > ul {
   display: flex;
 }
 
@@ -34,6 +46,7 @@ nav li {
   font-size: clamp(0.6rem, 5vw, 1.8rem);
 }
 
+
 li a {
   text-decoration: none;
   color: #424247;
@@ -43,13 +56,14 @@ li a {
   font-weight: 700;
   color: #3a3a3a;
   font-size: clamp(1rem, 5vw, 3rem);
+ 
 }
+
+/*banner section style*/
 
 .banner {
   background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
-  /* height: 100%; */
-  height: 100%;
-  
+  height: 100%; 
   background-size: cover;
   object-fit: cover;
   background-position: center;
@@ -111,6 +125,8 @@ input {
   color: #ffffff;
 }
 
+/*tour section style*/
+
 .tour-section {
   display: flex;
   justify-content: space-between;
@@ -122,7 +138,7 @@ input {
 }
 .tour-title {
   font-weight: 700;
-  font-family: clamp(1rem, 5vw, 4rem);
+  font-size: clamp(1rem, 5vw, 4rem);
   color: #131318;
 }
 .tour-description {
@@ -148,6 +164,8 @@ input {
   object-fit: cover;
   border-radius: 20px;
 }
+
+/*splash section style */
 .splash-text{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -160,22 +178,148 @@ input {
 .row{
     height: 300px;
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap:20px;
+    margin-bottom: 20px;
 }
 
+
+/*destination part style*/
+.choose-section{
+    margin-bottom: 100px;
+}
+.hotel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    max-width: 580px;
+    border-radius:20px;
+    padding: 30px 30px;
+}
+.box h3,p{
+    margin-top: 10px;
+}
+.box-1,.box-3{
+background-color: #fbb4631f;
+}
+.box-2{
+    background-color:#29cdf61f;
+}
+.box-3{
+    margin-top: 20px;
+    justify-self: center;
+}
+
+/*simple place section style*/
+.see-content{
+    max-width: 530px;
+}
+.see-title{
+    font-weight: 700;
+    font-size: clamp(1rem, 5vw,2.5rem);
+    color: #131318;
+}
+.see-btn{
+    margin-top: 10px;
+}
+
+.see-content> ul li {
+    margin-left: 30px;
+}
+.see-content> ul {
+    margin-bottom: 20px;
+}
+
+/*Newsletter section style*/
+.last-one{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+   gap: 20px;
+   margin-bottom: 100px;
+}
+.news-section{
+    max-width:475px;
+    min-height: 422px;
+    border: 3px solid orangered;
+    border-radius: 8px;
+    padding: 35px 35px;
+}
+.news-section input{
+    display: flex;
+    max-width: 395px;
+    max-height: 55px;
+    background-color: #13131805;
+    margin-top:20px ;
+}
+.sub-btn{
+    width:395px;
+    height: 55px;
+    margin-top: 20px;
+}
+.news-img img{
+     height: 100%;
+     width: 100%;
+     max-width: 675px;
+     max-height: 422px;
+}
+.news-section h4{
+    font-weight:600;
+    font-size:clamp(1rem,5vw,1.5rem);
+    margin-bottom: 20px;
+}
+.news-section p{
+    font-weight: 400;
+    font-size:clamp(0.6rem,5vw,1rem) ;
+    margin-bottom: 30px;
+}
+
+/*footer section style*/
+
+.footer-section {
+    margin-top: 100px;
+    background:#767679f5;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .footer-icons{
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+  }
+
+  .footer-icons img{
+    max-width: 20px;
+    max-height: 16px;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+  }
+  hr{
+    margin-bottom: 40px;
+    color: #131318;
+  }
+  .footer-p{
+        color: #131318;
+  }
+  
+ 
+  
+
+/*media query section*/
 
 @media screen and (max-width: 768px) {
   nav,
   .input-field,
-  .tour-section {
+  .tour-section ,.hotel,.last-one{
     flex-direction: column;
   }
 
   .banner-section,
   .banner-description,
   .input-field {
-    margin-top: 10px;
+    margin-top:5px;
   }
   .input-field {
     gap: 5px;
@@ -190,5 +334,8 @@ input {
   .row{
     flex-direction: column;
     height: auto;
+}
+.last-one{
+    gap: 20px;
 }
 }
