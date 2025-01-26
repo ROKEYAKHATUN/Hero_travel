@@ -350,10 +350,10 @@ input {
   position: relative;
 }
 .news-img img {
-  /* height: 100%; */
-  /* width: 100%; */
-  /* max-width: 675px; */
-  /* min-height: 300px; */
+  height: 100%;
+  width: 100%;
+  max-width: 675px;
+  min-height: 425px;
   object-fit: cover;
   position: relative;
 }
